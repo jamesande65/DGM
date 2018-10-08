@@ -27,11 +27,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	font-family: 'Roboto', sans-serif;
 	line-height: 1;
 	background-color: #ececec;
 }
 body * {
-	font-family: 'Roboto-Regular', sans-serif;
 	font-size: 14px;
 }
 ol, ul {
@@ -91,9 +91,31 @@ img {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
+.header-container .back-btn {
+	margin-left: -webkit-calc(100% - 93.488%);
+	margin-left: calc(100% - 93.488%);
+	font-size: 6.006vw;
+}
+.header-container .menu-btn {
+	margin-right: -webkit-calc(100% - 93.488%);
+	margin-right: calc(100% - 93.488%);
+	font-size: 6.006vw;
+	position: relative;
+	z-index: -5;
+}
+.header-container .back-btn,
+.header-container .menu-btn {
+	color: #292125;
+}
+.header-container .back-btn:hover {
+	color: #ff5a34;
+}
+.header-container .menu-btn:hover {
+	color: #ff5a34;
+}
 .header-container .logo {
 	width: 82px;
-	height: 70px;
+	height: 80px;
 	max-height: 100%;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -107,6 +129,7 @@ img {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	padding: 5px 0;
 }
 .header-container .logo img {
 	height: 90%;
@@ -121,16 +144,272 @@ img {
 
 .wrapper {
 	max-width: 768px;
-	height: 100vh;
-	background-color: #000;
+	min-height: 100vh;
 	margin: 0 auto;
+	position: relative;
 }
 
-.wrapper.welcome-page {
+.wrapper.welcome-page:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
 	background: url("../img/welcome-bg.jpg") 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	        background-size: cover;
 }
+
+.wrapper.main:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	background: url("../img/main-bg.jpg") 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	        background-size: cover;
+}
+
+.welcome-page .content {
+	padding: 50px 0;
+}
+
+.welcome-page .welcome-page__logo {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.welcome-page .welcome-page__title {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-top: 23px;
+}
+
+.welcome-page .welcome-page__title .welcome-page__title-big {
+	color: #ffffff;
+	font-size: 64px;
+	font-weight: 900;
+	line-height: 48px;
+	letter-spacing: 2px;
+	white-space: nowrap;
+}
+
+.welcome-page .welcome-page__title .welcome-page__title-small {
+	color: #ffffff;
+	font-size: 19px;
+	line-height: 48px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-top: 20px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.welcome-page .welcome-page__title-small .fa-circle {
+	color: #ff481e;
+	font-size: 7px;
+	margin: 0 11px;
+}
+
+.welcome-page .welcome-page__title-small .fa-circle:before {
+	line-height: 48px;
+}
+
+.welcome-page__bottom-block {
+	margin-top: 76px;
+	padding-left: 11%;
+	padding-right: 11%;
+}
+
+.welcome-page__language-block {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.welcome-page__language-item {
+	width: 50%;
+	max-width: 250px;
+	-webkit-box-shadow: 18px 21px 24px rgba(0, 0, 0, 0.27);
+	        box-shadow: 18px 21px 24px rgba(0, 0, 0, 0.27);
+	background-color: #151820;
+	height: 60vw;
+	max-height: 340px;
+	border: 5px solid #ffffff;
+	text-decoration: none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.welcome-page .welcome-page__language-item + .welcome-page__language-item {
+	margin-left: 5px;
+}
+
+.welcome-page__language-item:hover,
+.welcome-page__language-item:active,
+.welcome-page__language-item:focus {
+	text-decoration: none;
+}
+
+.welcome-page__language-item span {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 48px;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+}
+
+.welcome-page__offer-block {
+	margin-top: 70px;
+	background-color: rgba(34, 29, 28, .5);
+	height: 100%;
+	min-height: 100px;
+	position: relative;
+}
+
+.welcome-page__offer-img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.welcome-page__offer-img img {
+	bottom: 0;
+	left: 0;
+	display: block;
+}
+
+.welcome-page__offer-info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	position: relative;
+	z-index: 5;
+	padding: 15px 0 15px 22vw;
+}
+
+span.welcome-page__offer-title {
+	color: #ffe0b4;
+	font-family: "Kaushan Script", cursive;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 48px;
+	letter-spacing: 1.13px;
+}
+
+span.welcome-page__offer-name {
+	color: #ffffff;
+	font-size: 24px;
+	line-height: 48px;
+	letter-spacing: 0.75px;
+}
+
+.welcome-page__offer-prices > a {
+	display: inline-block;
+	height: 50px;
+	padding: 0 30px;
+	background-color: #54525d;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 48px;
+	letter-spacing: 0.63px;
+}
+
+.welcome-page__offer-prices .currency {
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.63px;
+	color: #a6a5a5;
+}
+
+span.welcome-page__offer-small {
+	color: #6c6a73;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 48px;
+	letter-spacing: 0.41px;
+}
+
+/* main menu styles start */
+.main.menu .content {
+	padding: 80px 0;
+	overflow: hidden;
+}
+
+.main.menu .main-menu__slider {
+	height: 100%;
+}
+/* main menu styles end */
+
+
+
+/* categories page styles start */
+.categories__block {
+	margin: 30px auto;
+	max-width: 560px;
+}
+/* categories page styles end */
+
+
 
 /* MAIN STYLES END */
 
