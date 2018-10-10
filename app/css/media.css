@@ -10,6 +10,37 @@
     .welcome-page__offer-info {
         padding-left: 169px;
     }
+
+    .categories__block-item {
+        padding-left: 138px;
+        margin-bottom: 20px;
+    }
+
+    .subcategories__block-item span:last-child,
+    .categories__block-item span {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    .categories__block-item span:first-child {
+        left: 45px;
+    }
+
+    .subcategories__block-item {
+        padding: 21px 28px 20px;
+    }
+
+    .categories .header-container:after {
+        width: 65px;
+    }
+
+    .subcategories__list-title {
+        height: 80px;
+    }
+
+    .subcategories__list-title span {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -17,6 +48,19 @@
         padding-left: 6%;
         padding-right: 6%;
     }
+
+    .categories__block {
+        margin: 0 20px;
+    }
+
+    .categories__block-item .icon:before {
+        font-size: 10vw;
+    }
+
+    .subcategories__block-item .icon:before {
+        font-size: 9vw;
+    }
+
 }
 
 @media screen and (max-width: 530px) {

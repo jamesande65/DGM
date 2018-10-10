@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DFM - main menu</title>
+    <title>DFM - subcategory</title>
 
     <!-- Bootstrap -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto:400,700" rel="stylesheet">
@@ -27,7 +27,7 @@
     <![endif]-->
 </head>
 <body>
-    <div class="wrapper main menu">
+    <div class="wrapper main subcategories">
         <div class="header">
             <div class="header-container">
                 <a class="btn back-btn" href="/">
@@ -36,25 +36,66 @@
                 <a class="logo" href="/">
                     <img src="/img/logo-b.png" alt="logo">
                 </a>
+                <div class="btn menu-btn" onclick="$('.subcategories__block')[0].classList.toggle('inactive'); $(this)[0].classList.toggle('active');">
+                    <i class="fa fa-bars"></i>
+                </div>
             </div>
         </div>
 
         <div class="content">
-            <div class="main-menu__slider">
-                <div class="main-menu__slide">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
+            <div class="subcategories__block">
+                <a class="subcategories__block-item" href="subcategory.html">
+                    <span class="icon icon-salads"></span>
+                    <span>Salads</span>
+                </a>
+                <a class="subcategories__block-item" href="subcategory.html">
+                    <span class="icon icon-starters"></span>
+                    <span>Starters</span>
+                </a>
+                <a class="subcategories__block-item" href="subcategory.html">
+                    <span class="icon icon-soups"></span>
+                    <span>Soups</span>
+                </a>
+                <a class="subcategories__block-item" href="subcategory.html">
+                    <span class="icon icon-pasta"></span>
+                    <span>Homemade pasta</span>
+                </a>
+                <a class="subcategories__block-item" href="subcategory.html">
+                    <span class="icon icon-traditions"></span>
+                    <span>Mountain & traditions</span>
+                </a>
+                <a class="subcategories__block-item" href="subcategory.html">
+                    <span class="icon icon-mains"></span>
+                    <span>Mains</span>
+                </a>
+                <a class="subcategories__block-item" href="subcategory.html">
+                    <span class="icon icon-desserts"></span>
+                    <span>Desserts & cheese</span>
+                </a>
+            </div>
+            <div class="subcategories__list">
+                <div class="subcategories__list-top">
+                    <div class="subcategories__list-banner">
+                        <img src="img/category-banner.jpg" alt="banner">
+                        <div class="subcategories__list-title">
+                            <span>Salads</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="main-menu__slide">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                </div>
-                <div class="main-menu__slide">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
+                <div class="subcategories__list-bottom">
+                    <ul>
+                        <li>
+                            <div class="menu-item">
+                                <div class="menu-item__block">
+                                    <img class="menu-item__img" src="img/item.jpg" alt="item">
+                                    <div class="menu-item__info"></div>
+                                </div>
+                                <div class="menu-item__price">
+                                    <span>$18.00</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
