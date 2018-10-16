@@ -41,6 +41,48 @@
     .subcategories__list-title span {
         font-size: 30px;
     }
+
+    .menu-item__price {
+        top: 25px;
+    }
+
+    .menu-item__block .menu-item__info-title {
+        font-size: 25px;
+    }
+
+    .menu-item__block .menu-item__info-title .icon {
+        font-size: 24px;
+    }
+
+    .menu-item__block .menu-item__info-subtitle {
+        font-size: 20px;
+    }
+
+    .small-carousel .carousel-item.video .icon {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 739px) {
+    .menu-item__block .menu-item__info-list {
+        flex-direction: column;
+    }
+
+    .menu-item__block .menu-item__info-list li {
+        padding-left: 25px;
+    }
+
+    .menu-item__block .menu-item__info-list li:before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: #ff5a34;
+        border-radius: 3px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -61,6 +103,41 @@
         font-size: 9vw;
     }
 
+    .menu-item__block {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .menu-item__price {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .menu-item__block .menu-item__info-title {
+        font-size: 18px;
+    }
+
+    .menu-item__block .menu-item__info {
+        margin-top: 50px;
+    }
+
+    .menu-item__block .menu-item__img + .menu-item__info {
+        margin-top: 0;
+    }
+
+    .menu-item__block .menu-item__info-title .icon {
+        font-size: 18px;
+    }
+
+    .menu-item__block .menu-item__info-subtitle {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .menu-item__block .menu-item__info-list li {
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (max-width: 530px) {
@@ -71,6 +148,26 @@
     .welcome-page__offer-info {
         padding: 15px;
         align-items: center;
+    }
+
+    .menu-item__block .menu-item__info-list {
+        flex-direction: column;
+    }
+
+    .menu-item__block .menu-item__info-list li {
+        padding-left: 25px;
+    }
+
+    .menu-item__block .menu-item__info-list li:before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        background-color: #ff5a34;
+        border-radius: 3px;
     }
 }
 

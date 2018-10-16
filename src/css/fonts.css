@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?4azjpk');
-    src:  url('fonts/icomoon.eot?4azjpk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?4azjpk') format('truetype'),
-    url('fonts/icomoon.woff?4azjpk') format('woff'),
-    url('fonts/icomoon.svg?4azjpk#icomoon') format('svg');
+    src:  url('fonts/icomoon.eot?3xluqp');
+    src:  url('fonts/icomoon.eot?3xluqp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?3xluqp') format('truetype'),
+    url('fonts/icomoon.woff?3xluqp') format('woff'),
+    url('fonts/icomoon.svg?3xluqp#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,6 +24,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-play:before {
+    content: "\e90d";
+}
+.icon-clock:before {
+    content: "\e90a";
+}
+.icon-fire:before {
+    content: "\e90b";
+}
+.icon-info:before {
+    content: "\e90c";
+}
 .icon-cellar:before {
     content: "\e900";
 }
@@ -32,7 +44,6 @@
 }
 .icon-drinks:before {
     content: "\e902";
-    color: #fff;
 }
 .icon-food:before {
     content: "\e903";
@@ -51,7 +62,6 @@
 }
 .icon-starters:before {
     content: "\e908";
-    color: #fff;
 }
 .icon-traditions:before {
     content: "\e909";
