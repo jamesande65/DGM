@@ -17,6 +17,17 @@ $(document).ready(function(){
         focusOnSelect: true,
         asNavFor: '.big-carousel'
     });
+    $('.main-menu__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+        centerMode: true,
+        variableWidth: true,
+        arrows: false,
+        swipeToSlide: true,
+        infinite: false,
+        focusOnSelect: true,
+    });
 
     //handle video in carousel
 
