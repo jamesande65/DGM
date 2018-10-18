@@ -55,7 +55,7 @@
     }
 
     .menu-item__info-subtitle {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .small-carousel .carousel-item.video .icon {
@@ -90,6 +90,10 @@
 
     .main.menu .content {
         padding: 80px 0;
+    }
+
+    .subcategories__list-full-additional {
+        margin: 29px 0;
     }
 }
 
@@ -175,7 +179,7 @@
     }
 
     .menu-item__info-subtitle {
-        font-size: 15px;
+        font-size: 15px !important;
         line-height: 20px;
     }
 
@@ -270,6 +274,10 @@
 
     .welcome-page__language-item {
         border-width: 3px;
+    }
+
+    .subcategories__list-full-info .menu-item__info-title {
+        font-size: 15px;
     }
 }
 

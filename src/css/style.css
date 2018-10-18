@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto-Regular', sans-serif;
 	line-height: 1;
 	background-color: #ececec;
 }
@@ -198,6 +198,7 @@ img {
 .welcome-page .welcome-page__title .welcome-page__title-big {
 	color: #ffffff;
 	font-size: 64px;
+	font-family: "Roboto-Black", sans-serif;
 	font-weight: 900;
 	line-height: 48px;
 	letter-spacing: 2px;
@@ -208,6 +209,7 @@ img {
 	color: #ffffff;
 	font-size: 19px;
 	line-height: 48px;
+	font-family: "Roboto-Black", sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -264,6 +266,7 @@ img {
 .welcome-page__language-item span {
 	color: #ffffff;
 	font-size: 24px;
+	font-family: "Roboto-Bold", sans-serif;
 	font-weight: 700;
 	line-height: 48px;
 	text-transform: uppercase;
@@ -300,7 +303,7 @@ img {
 
 span.welcome-page__offer-title {
 	color: #ffe0b4;
-	font-family: "Kaushan Script", cursive;
+	font-family: "KaushanScript-Regular", cursive;
 	font-size: 36px;
 	font-weight: 400;
 	line-height: 48px;
@@ -322,13 +325,13 @@ span.welcome-page__offer-name {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 20px;
-	font-weight: 400;
 	line-height: 48px;
 	letter-spacing: 0.63px;
 }
 
 .welcome-page__offer-prices .currency {
 	font-size: 20px;
+	font-family: "Roboto-Bold", sans-serif;
 	font-weight: 700;
 	letter-spacing: 0.63px;
 	color: #a6a5a5;
@@ -337,7 +340,6 @@ span.welcome-page__offer-name {
 span.welcome-page__offer-small {
 	color: #6c6a73;
 	font-size: 13px;
-	font-weight: 400;
 	line-height: 48px;
 	letter-spacing: 0.41px;
 }
@@ -402,7 +404,7 @@ span.welcome-page__offer-small {
 .main-menu__slide-text {
 	color: #292125;
 	font-size: 4vw;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto-Black', sans-serif;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: .94px;
@@ -574,7 +576,6 @@ span.welcome-page__offer-small {
 
 .subcategories__list-full-info {
 	margin: 0 29px;
-	border-bottom: 1px solid;
 }
 
 .subcategories__list-bottom {
@@ -582,7 +583,7 @@ span.welcome-page__offer-small {
 }
 
 .subcategories__list-full-additional {
-	margin: 29px 0;
+	margin: 3.5vw 0;
 }
 
 .subcategories__list-full-additional span {
@@ -590,6 +591,7 @@ span.welcome-page__offer-small {
 	font-size: 18px;
 	letter-spacing: 0.56px;
 	margin-right: 30px;
+	margin-top: 5px;
 	display: inline-flex;
 	align-items: center;
 }
@@ -658,21 +660,19 @@ span.welcome-page__offer-small {
 	color: #ff5a34;
 }
 
-.menu-item__info-subtitle {
-	color: #847c80;
-	font-size: 2.5vw;
-	line-height: 36px;
-	letter-spacing: 0.63px;
-}
-
 .menu-item__info-list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
+.subcategories__list-full-info .menu-item__info-list {
+	border-bottom: 1px solid #969696;
+}
+
 .menu-item__info-list li {
 	color: #292125;
 	font-size: 15px;
+	font-family: "Roboto-Bold", sans-serif;
 	font-weight: 700;
 	line-height: 36px;
 	letter-spacing: 0.47px;
@@ -702,15 +702,33 @@ span.welcome-page__offer-small {
 	flex-basis: 15%;
 }
 
+.menu-item__info-price span,
 .menu-item__price span {
 	color: #ff5a34;
 	font-size: 26px;
+	font-family: "Roboto-Bold", sans-serif;
 	font-weight: 700;
 	letter-spacing: 0.81px;
 }
 
+.menu-item__info-price span {
+	margin-left: 8px;
+	white-space: nowrap;
+}
+
+.menu-item__info-price .currency,
 .menu-item__price .currency {
+	font-family: "Roboto-Regular", sans-serif;
 	font-weight: 400;
+}
+
+.menu-item__info-subtitle {
+	font-family: "Roboto-Regular", sans-serif;
+	font-weight: 400;
+	color: #847c80 !important;
+	font-size: 2.5vw !important;
+	line-height: 36px;
+	letter-spacing: 0.63px;
 }
 
 /* subcategories page styles end */
@@ -775,6 +793,14 @@ span.welcome-page__offer-small {
 	color: #fff;
 	font-size: 9vw;
 	background-color: rgba(0,0,0, .6);
+}
+
+.menu-item__info-price {
+	padding: 29px 0 49px;
+}
+
+.subcategories__list-full-block {
+	box-shadow: 18px 21px 24px rgba(0, 0, 0, 0.27);
 }
 
 /* single item page styles end */
