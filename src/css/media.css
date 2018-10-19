@@ -95,6 +95,16 @@
     .subcategories__list-full-additional {
         margin: 29px 0;
     }
+
+    .subcategories .header-container:after,
+    .menu .header-container:after,
+    .categories .header-container:after {
+        max-width: 33px;
+    }
+
+    .main-menu__slide div a {
+        padding: 0 39px;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 739px) {
