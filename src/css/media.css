@@ -3,6 +3,10 @@
         font-size: 46px;
     }
 
+    .header:before {
+        padding-top: 110px;
+    }
+
     .header-container .menu-btn {
         font-size: 46px;
     }
@@ -269,5 +273,67 @@
 @media screen and (max-width: 375px) {
     .welcome-page .welcome-page__title .welcome-page__title-big {
         font-size: 50px;
+    }
+}
+
+
+@media only screen
+and (min-width:768px)
+and (max-width:1024px)
+and (orientation : landscape) {
+    .header-container {
+        height: 90px;
+    }
+    .wrapper,
+    .subcategories__block,
+    .header-container {
+        max-width: initial;
+    }
+    .subcategories__list-banner > img {
+        width: 100%;
+    }
+    .welcome-page__bottom-block {
+        margin-top: 30px;
+    }
+    .welcome-page__language-block {
+        justify-content: center;
+    }
+    .welcome-page__language-item {
+        height: 100px;
+    }
+    .welcome-page .welcome-page__language-item+.welcome-page__language-item {
+        margin-left: 30px;
+    }
+    .welcome-page__offer-block {
+        display: flex;
+        justify-content: center;
+        width: 75%;
+        margin: 50px auto 0;
+    }
+
+    .main.menu .content {
+        padding: 0;
+    }
+
+    .main-menu__slide div a {
+        height: 150px;
+        width: 480px;
+    }
+
+    .main-menu__slide div + div {
+        margin-top: 40px;
+    }
+
+    .categories__block-item {
+        height: 65px;
+    }
+
+    .header:before {
+        padding-top: 90px;
+    }
+
+    .big-carousel .slick-track {
+        height: 400px;
+        max-height: 400px;
     }
 }
