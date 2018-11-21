@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DFM - item</title>
+    <title>DFM - subcategory</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -26,121 +26,57 @@
     <![endif]-->
 </head>
 <body>
-    <div class="wrapper main subcategories item">
+    <div class="wrapper main subcategories">
         <div class="header">
             <div class="header-container">
-                <a class="btn back-btn" href="salads.html">
+                <a class="btn back-btn" href="categories.html">
                     <i class="fa fa-chevron-left"></i>
                 </a>
                 <a class="logo" href="index.html">
                     <img src="img/logo-b.png" alt="logo">
                 </a>
-                <div class="btn menu-btn" onclick="$('.subcategories__block')[0].classList.toggle('inactive'); $(this)[0].classList.toggle('active');">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <div class="subcategories__block inactive">
-                    <div class="subcategories__block-slider">
-                        <a class="subcategories__block-item" href="salads.html">
-                            <span class="icon icon-salads"></span>
-                            <span>Salads</span>
-                        </a>
-                        <a class="subcategories__block-item" href="starters.html">
-                            <span class="icon icon-starters"></span>
-                            <span>Starters</span>
-                        </a>
-                        <a class="subcategories__block-item" href="soups.html">
-                            <span class="icon icon-soups"></span>
-                            <span>Soups</span>
-                        </a>
-                        <a class="subcategories__block-item" href="pasta.html">
-                            <span class="icon icon-pasta"></span>
-                            <span>Homemade pasta</span>
-                        </a>
-                        <a class="subcategories__block-item" href="traditions.html">
-                            <span class="icon icon-traditions"></span>
-                            <span>Mountain & traditions</span>
-                        </a>
-                        <a class="subcategories__block-item" href="mains.html">
-                            <span class="icon icon-mains"></span>
-                            <span>Mains</span>
-                        </a>
-                        <a class="subcategories__block-item" href="desserts.html">
-                            <span class="icon icon-desserts"></span>
-                            <span>Desserts & cheese</span>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="content">
+            <div class="subcategories__block">
+                <div class="subcategories__block-slider">
+                    <a class="subcategories__block-item" href="salads.html">
+                        <span class="icon icon-salads"></span>
+                        <span>Salads</span>
+                    </a>
+                    <a class="subcategories__block-item" href="starters.html">
+                        <span class="icon icon-starters"></span>
+                        <span>Starters</span>
+                    </a>
+                    <a class="subcategories__block-item" href="soups.html">
+                        <span class="icon icon-soups"></span>
+                        <span>Soups</span>
+                    </a>
+                    <a class="subcategories__block-item" href="pasta.html">
+                        <span class="icon icon-pasta"></span>
+                        <span>Homemade pasta</span>
+                    </a>
+                    <a class="subcategories__block-item" href="traditions.html">
+                        <span class="icon icon-traditions"></span>
+                        <span>Mountain & traditions</span>
+                    </a>
+                    <a class="subcategories__block-item" href="mains.html">
+                        <span class="icon icon-mains"></span>
+                        <span>Mains</span>
+                    </a>
+                    <a class="subcategories__block-item" href="desserts.html">
+                        <span class="icon icon-desserts"></span>
+                        <span>Desserts & cheese</span>
+                    </a>
+                </div>
+            </div>
             <div class="subcategories__list">
-                <div class="subcategories__list-item">
-                    <div class="subcategories__list-carousel">
-                        <div class="big-carousel">
-                            <div class="carousel-item">
-                                <img src="img/category-banner.jpg" alt="banner">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/dish1.jpg" alt="banner">
-                            </div>
-                            <div class="carousel-item video">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ONIF3LDvgQE?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/dish3.jpg" alt="banner">
-                            </div>
-                            <div class="carousel-item video">
-                                <video src="video/dish.mp4" width="100%" height="100%" controls></video>
-                            </div>
-                        </div>
-                        <div class="small-carousel">
-                            <div class="carousel-item">
-                                <img src="img/category-banner.jpg" alt="banner">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/dish1.jpg" alt="banner">
-                            </div>
-                            <div class="carousel-item video">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ONIF3LDvgQE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/dish3.jpg" alt="banner">
-                            </div>
-                            <div class="carousel-item video">
-                                <video src="video/dish.mp4"></video>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="subcategories__list-full-block">
+                <div class="subcategories__list-top">
+                    <div class="subcategories__list-banner">
+                        <img src="img/category-banner6.jpg" alt="banner">
                         <div class="subcategories__list-title">
-                            <span>The Avenue Montagne</span>
-                        </div>
-                        <div class="subcategories__list-full-info">
-                            <div class="subcategories__list-full-additional">
-                                <span>
-                                    <span class="icon icon-fire"></span>
-                                    220 Calories
-                                </span>
-                                <span>
-                                    <span class="icon icon-clock"></span>
-                                    15 minutes
-                                </span>
-                            </div>
-                            <div class="menu-item__info">
-                                <span class="menu-item__info-title">A Swiss classic, better known as “Nusslisalat”
-Nunc commodo diam magna, vitae semper libero aliquet et.</span>
-                                <span class="menu-item__info-subtitle">A Swiss classic, better known as “Nusslisalat”</span>
-                                <ul class="menu-item__info-list">
-                                    <li>Wild Herbs salad</li>
-                                    <li>Sauteed chantrelle</li>
-                                    <li>Sherry vinegar dressing.</li>
-                                </ul>
-                                <div class="menu-item__info-price">
-                                    <span><span class="currency">$</span>55.00</span><span class="menu-item__info-subtitle">Small bowl</span>
-                                    <span><span class="currency">$</span>655.00</span><span class="menu-item__info-subtitle">Large bowl</span>
-                                </div>
-                            </div>
+                            <span>Mains</span>
                         </div>
                     </div>
                 </div>

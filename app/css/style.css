@@ -219,7 +219,7 @@ img {
 }
 
 .welcome-page .content {
-	padding: 50px 0;
+	padding: 30px 0;
 }
 
 .welcome-page .welcome-page__logo {
@@ -458,6 +458,10 @@ span.welcome-page__offer-small {
 	height: 100vw;
 }
 
+.main-menu__slide {
+	outline: none;
+}
+
 .main-menu__slide + .main-menu__slide {
 	margin-left: 9vw;
 }
@@ -613,20 +617,21 @@ span.welcome-page__offer-small {
 
 
 /* subcategories page styles start */
-.subcategories__block {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	overflow-x: auto;
+.item .subcategories__block {
+	position: absolute;
+	left: 0;
+	top: 100%;
 	width: 100%;
-	max-width: 768px;
+	z-index: 20;
+	background: #fff;
+	-webkit-box-shadow: 0 13px 25px -5px rgba(0,0,0,0.2);
+	        box-shadow: 0 13px 25px -5px rgba(0,0,0,0.2);
 }
 .subcategories__block.inactive {
 	display: none;
 }
 
-.subcategories__block-item {
+.slick-initialized .slick-slide.subcategories__block-item {
 	padding: 2vw 3.5vw;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -641,12 +646,22 @@ span.welcome-page__offer-small {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	background-color: #fff;
+	outline: none;
+	text-decoration: none;
 }
 
 .subcategories__block-item:hover {
 	text-decoration: none;
 	background-color: #ff481e;
+}
+
+.slick-list{
+	overflow: hidden;
+}
+.slick-track:after{
+	clear: both;
+	content: "";
+	display: block;
 }
 
 .subcategories__block-item span:last-child {

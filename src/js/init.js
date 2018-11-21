@@ -28,6 +28,13 @@ $(document).ready(function(){
         infinite: false,
         focusOnSelect: true,
     });
+    $('.subcategories__block-slider').slick({
+        slidesToScroll: 1,
+        variableWidth: true,
+        arrows: false,
+        swipeToSlide: true,
+        infinite: false,
+    });
 
     //handle video in carousel
 
